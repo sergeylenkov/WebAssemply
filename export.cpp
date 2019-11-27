@@ -1,9 +1,6 @@
-#include <iostream>
 #include <emscripten.h>
 
-#ifdef __cplusplus
 extern "C" {
-#endif
 
 int EMSCRIPTEN_KEEPALIVE get_sum(int number1, int number2)
 {
@@ -12,9 +9,7 @@ int EMSCRIPTEN_KEEPALIVE get_sum(int number1, int number2)
     return sum; 
 }
 
-#ifdef __cplusplus
 }
-#endif
 
 int main() { 
 }
