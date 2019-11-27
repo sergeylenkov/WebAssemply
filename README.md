@@ -1,2 +1,7 @@
-# WebAssemply
-Simple WebAssemply examples
+Build examples
+
+emcc hello.cpp -std=c++11 -s WASM=1 -O3 -o hello.js
+
+emcc external.cpp -std=c++11 -s WASM=1 -O3 -s "EXTRA_EXPORTED_RUNTIME_METHODS=['ccall']" -o external.js
+
+ emrun --no_browser --port 8080 .

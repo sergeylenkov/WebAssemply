@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <button id="button">Click me</button>
+    <div id="result"></div>
+
+    <script src="export.js"></script>
+	
+	  <script type='text/javascript'>
+        document.getElementById('button').addEventListener('click', function() {
+          const a = Math.floor(Math.random() * 10);
+          const b = Math.floor(Math.random() * 10);
+          
+          const result = _get_sum(a, b);
+
+          document.getElementById('result').innerText = a + ' + ' + b + ' = ' + result;
+        });
+    </script>
+    </body>
+</html>
