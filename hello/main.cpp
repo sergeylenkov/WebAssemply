@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main() {
-  std::cout << "Click" << std::endl;
+  std::cout << "Hello" << std::endl;
   return 0;
 }
